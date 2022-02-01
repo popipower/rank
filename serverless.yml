@@ -1,0 +1,13 @@
+
+service: lambda-ivr
+
+provider:
+  name: aws
+  runtime: python3.9
+  stage: ${opt:stage,'dev'}
+
+custom:
+  pythonRequirements:
+    dockerizePip: true
+    zip: true
+    slim: true
