@@ -150,8 +150,8 @@ def handler(event, context):
     envTicker = os.environ.get('tickers', None)
     responseType = os.environ.get('responseType', 'json')
     dte = os.environ.get('dteSpan', 3)
-    recipient = os.environ.get('recipient', 'sumitarora.kp@gmail.com')
-    sender = os.environ.get('sender', 'Volatility Notification<pahwa.saransh7@gmail.com>')
+    recipient = os.environ.get('recipient', '')
+    sender = os.environ.get('sender', 'Volatility Notification<>')
 
     tickers = ["AAPL","V"]
     if event is not None:
